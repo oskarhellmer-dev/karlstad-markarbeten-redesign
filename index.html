@@ -110,6 +110,9 @@
   textarea{resize:vertical;min-height:84px}
   .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
   .formcard .btn{width:100%;margin-top:6px}
+  .formcard .btnrow{display:flex;gap:12px}
+  .formcard .btnrow .btn{width:auto;margin-top:0;flex:1}
+  .formcard .btnrow #backBtn{flex:0 0 auto}
   .microcopy{font-size:.82rem;color:var(--muted);margin:12px 0 0;text-align:center;line-height:1.5}
   .microcopy b{color:var(--ink)}
   .field-error{font-size:.8rem;color:#a1462b;font-weight:700;margin:6px 0 0;display:none}
@@ -128,6 +131,7 @@
     display:grid;place-items:center;color:var(--accent)}
 
   section.blk{padding:72px 0}
+  .offert-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
   .blk-head{max-width:60ch;margin-bottom:36px}
 
   /* Services */
@@ -198,6 +202,7 @@
 
   @media (max-width:980px){
     .hero-grid{grid-template-columns:1fr;gap:32px;padding:40px 0 44px}
+    .offert-grid{grid-template-columns:1fr;gap:32px}
     nav.main{display:none}
     .svc,.steps{grid-template-columns:1fr 1fr}
     .quotes{columns:2}
@@ -270,7 +275,7 @@
   </div>
 
   <section class="blk" id="offert">
-    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center" id="offertgrid">
+    <div class="wrap offert-grid" id="offertgrid">
       <div>
         <p class="eyebrow">Begär offert</p>
         <h2>Två snabba steg – sedan tar en entreprenör över</h2>
@@ -330,9 +335,9 @@
             <label class="f">Beskriv jobbet
               <textarea name="message" required placeholder="T.ex. dränera runt huset, ca 60 m², vill komma igång i vår."></textarea>
             </label>
-            <div style="display:flex;gap:12px">
-              <button type="button" class="btn btn-ghost" id="backBtn" style="flex:0 0 auto">← Tillbaka</button>
-              <button type="submit" class="btn btn-primary" id="sendBtn" style="flex:1">Få min kostnadsfria offert</button>
+            <div class="btnrow">
+              <button type="button" class="btn btn-ghost" id="backBtn">← Tillbaka</button>
+              <button type="submit" class="btn btn-primary" id="sendBtn">Få min kostnadsfria offert</button>
             </div>
             <p class="microcopy"><b>Kostnadsfritt · inte bindande · svar inom 24 tim.</b><br>Vi säljer inte dina uppgifter vidare.</p>
           </div>
