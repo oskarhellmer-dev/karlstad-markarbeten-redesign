@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Markarbeten Karlstad – offert från entreprenörer i Värmland</title>
+<meta name="description" content="Dränering, husgrund, avlopp, sprängning, stenläggning och schaktning i Karlstad. Beskriv jobbet så kopplar vi ihop dig med markentreprenörer i Värmland.">
+<meta property="og:title" content="Markarbeten Karlstad – offert från entreprenörer i Värmland">
+<meta property="og:description" content="Beskriv jobbet så kopplar vi ihop dig med markentreprenörer i Värmland. Kostnadsfritt och inte bindande.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta name="theme-color" content="#16150f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316150f'/%3E%3Cpath d='M8 22 L16 9 L24 22' stroke='%23e5a91f' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper:#f6f3ec; --paper-2:#efeade; --ink:#16150f; --ink-soft:#3d3a30;
+    --muted:#6a6555; --line:#e2dccb; --card:#fffdf8;
+    --accent:#b7850f; --accent-bright:#e5a91f; --accent-soft:#f6ecd2;
+    --dark:#16150f; --dark-2:#211f16;
+    --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:24px;
+    --sp:4px; --ease:cubic-bezier(.22,1,.36,1);
+    --max:1200px;
+    --font:'Manrope',ui-sans-serif,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);
+    font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:12px;top:12px;background:#fff;padding:10px 16px;border-radius:8px;z-index:200}
+  h1,h2,h3{letter-spacing:-.025em;line-height:1.12;margin:0 0 16px;text-wrap:balance}
+  h1{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800}
+  h2{font-size:clamp(1.6rem,2.8vw,2.3rem);font-weight:800}
+  h3{font-size:1.15rem;font-weight:700}
+  p{text-wrap:pretty}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+  .lead{font-size:1.12rem;color:var(--ink-soft);max-width:60ch;margin:0 0 24px}
+  .muted{color:var(--muted)}
+
+  /* Byt badge (bara för att visa att detta är ett förslag) */
+  .demo{background:var(--accent-bright);color:var(--ink);font-size:12px;font-weight:700;
+    text-align:center;padding:7px 16px;letter-spacing:.02em}
+
+  /* Knappar */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:15px 24px;border-radius:9999px;font-weight:700;font-size:1rem;text-decoration:none;
+    border:1.5px solid transparent;cursor:pointer;font-family:inherit;
+    transition:transform .5s var(--ease),background-color .3s var(--ease),border-color .3s var(--ease)}
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--accent-bright);color:var(--ink)}
+  .btn-primary:hover{background:#f0b52f}
+  .btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:#000}
+  :focus-visible{outline:3px solid var(--accent-bright);outline-offset:2px}
+  .arrow{transition:transform .5s var(--ease)}
+  .btn:hover .arrow{transform:translateX(4px)}
+
+  /* Header */
+  header.site{position:sticky;top:0;z-index:60;background:rgba(246,243,236,.86);
+    backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .hrow{display:flex;align-items:center;gap:20px;min-height:70px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;text-decoration:none;font-size:1.05rem}
+  .brand svg{flex:0 0 auto}
+  nav.main{margin-left:auto;display:flex;gap:22px;font-size:.94rem;font-weight:600}
+  nav.main a{text-decoration:none;color:var(--ink-soft);padding:4px 0}
+  nav.main a:hover{color:var(--ink)}
+  .hcta{display:flex;align-items:center;gap:14px}
+  .hphone{font-weight:700;text-decoration:none;font-size:.94rem;white-space:nowrap}
+  .hcta .btn{padding:11px 18px;font-size:.9rem}
+
+  /* Hero */
+  .hero{background:var(--dark);color:#fff;border-radius:0 0 var(--r-xl) var(--r-xl);overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start;
+    padding:56px 0 60px}
+  .hero .eyebrow{color:var(--accent-bright)}
+  .hero h1{color:#fff}
+  .hero .lead{color:#cdc9bd;margin-bottom:28px}
+  .hero-art{position:relative;border-radius:var(--r-lg);overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+  .hero-art img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+  .trust{display:flex;gap:18px;flex-wrap:wrap;margin:26px 0 0;font-size:.92rem;color:#cdc9bd}
+  .trust b{color:#fff}
+  .stars{color:var(--accent-bright);letter-spacing:2px}
+
+  /* Form card */
+  .formcard{background:var(--card);color:var(--ink);border-radius:var(--r-lg);padding:28px;
+    box-shadow:0 24px 60px rgba(0,0,0,.35)}
+  .formcard h2{font-size:1.35rem;margin:0 0 6px}
+  .formcard .fsub{color:var(--muted);font-size:.92rem;margin:0 0 18px}
+  .progress{display:flex;align-items:center;gap:10px;margin:0 0 18px}
+  .dot{display:flex;align-items:center;gap:8px;font-size:.82rem;font-weight:700;color:var(--muted)}
+  .dot i{width:24px;height:24px;border-radius:8px;background:var(--accent-soft);color:var(--accent);
+    display:grid;place-items:center;font-style:normal;font-size:.78rem}
+  .dot.on{color:var(--ink)} .dot.on i{background:var(--accent-bright);color:var(--ink)}
+  .bar{flex:1;height:1px;background:var(--line)}
+  .step{display:none}
+  .step.on{display:block;animation:fade .45s var(--ease) both}
+  label.f{display:block;margin-bottom:14px;font-size:.86rem;font-weight:700;color:var(--ink-soft)}
+  label.f span{font-weight:500;color:var(--muted)}
+  input,select,textarea{width:100%;margin-top:6px;padding:12px 14px;border:1.5px solid var(--line);
+    border-radius:var(--r-md);font-family:inherit;font-size:1rem;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{border-color:var(--accent-bright);outline:none}
+  textarea{resize:vertical;min-height:84px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .formcard .btn{width:100%;margin-top:6px}
+  .microcopy{font-size:.82rem;color:var(--muted);margin:12px 0 0;text-align:center;line-height:1.5}
+  .microcopy b{color:var(--ink)}
+  .field-error{font-size:.8rem;color:#a1462b;font-weight:700;margin:6px 0 0;display:none}
+  .orline{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.82rem;margin:16px 0 4px}
+  .orline::before,.orline::after{content:"";height:1px;background:var(--line);flex:1}
+  .call{display:flex;flex-direction:column;gap:2px;font-size:.9rem}
+  .call a{font-weight:700;text-decoration:none}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  /* Trust bar */
+  .tbar{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:26px 0;
+    border-bottom:1px solid var(--line)}
+  .tbar div{display:flex;gap:12px;align-items:flex-start;font-size:.92rem;color:var(--ink-soft)}
+  .tbar b{display:block;color:var(--ink)}
+  .ico{flex:0 0 34px;width:34px;height:34px;border-radius:9px;background:var(--accent-soft);
+    display:grid;place-items:center;color:var(--accent)}
+
+  section.blk{padding:72px 0}
+  .blk-head{max-width:60ch;margin-bottom:36px}
+
+  /* Services */
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 24px;
+    text-decoration:none;display:flex;flex-direction:column;
+    transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s var(--ease)}
+  .card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(22,21,15,.09);border-color:#d6cdb4}
+  .card h3{margin:16px 0 8px}
+  .card p{color:var(--ink-soft);font-size:.94rem;margin:0 0 16px}
+  .card .more{margin-top:auto;font-weight:700;font-size:.9rem;color:var(--accent);display:inline-flex;gap:6px;align-items:center}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .stepline{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:28px 24px}
+  .num{width:38px;height:38px;border-radius:10px;background:var(--ink);color:var(--accent-bright);
+    display:grid;place-items:center;font-weight:800;margin-bottom:16px}
+  .stepline p{color:var(--ink-soft);font-size:.94rem;margin:0}
+
+  /* Testimonials */
+  .quotes{columns:3;column-gap:20px}
+  .quote{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+    padding:22px;margin:0 0 20px}
+  .quote p{margin:0 0 14px;color:var(--ink-soft);font-size:.96rem}
+  .who{display:flex;align-items:center;gap:10px}
+  .who i{width:36px;height:36px;border-radius:10px;background:var(--accent-soft);color:var(--accent);
+    display:grid;place-items:center;font-style:normal;font-weight:800;font-size:.85rem}
+  .who b{display:block;font-size:.9rem}
+  .who small{color:var(--muted);font-size:.82rem}
+
+  /* Areas */
+  .areas{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .areas a{text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:9999px;
+    padding:8px 16px;font-size:.9rem;font-weight:600;transition:border-color .5s var(--ease)}
+  .areas a:hover{border-color:var(--accent-bright)}
+
+  /* FAQ — sid-vid lista istället för accordion */
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:18px 40px}
+  .faq div{border-top:2px solid var(--ink);padding-top:16px}
+  .faq h3{font-size:1.02rem;margin:0 0 8px}
+  .faq p{margin:0;color:var(--ink-soft);font-size:.94rem}
+
+  /* CTA band */
+  .ctaband{background:var(--dark);color:#fff;border-radius:var(--r-xl);padding:52px 48px;
+    display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+  .ctaband h2{color:#fff;margin:0 0 8px}
+  .ctaband p{color:#cdc9bd;margin:0;max-width:46ch}
+
+  /* Footer */
+  footer.site{background:var(--dark-2);color:#c9c5b8;padding:56px 0 28px;font-size:.92rem;margin-top:72px}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;padding-bottom:32px}
+  footer .fbrand{font-weight:800;color:#fff;font-size:1.1rem;margin-bottom:10px;display:flex;gap:8px;align-items:center}
+  footer h4{color:#fff;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0 0 14px}
+  footer a{color:#c9c5b8;text-decoration:none}
+  footer a:hover{color:var(--accent-bright)}
+  footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+  .fbottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;
+    justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.82rem;color:#9b9788}
+  .fbottom button{background:none;border:none;color:#9b9788;font-family:inherit;font-size:.82rem;cursor:pointer}
+  .fbottom button:hover{color:var(--accent-bright)}
+
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:32px;padding:40px 0 44px}
+    nav.main{display:none}
+    .svc,.steps{grid-template-columns:1fr 1fr}
+    .quotes{columns:2}
+    .faq{grid-template-columns:1fr}
+    .fgrid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:640px){
+    .tbar{grid-template-columns:1fr 1fr}
+    .svc,.steps,.quotes{grid-template-columns:1fr}
+    .quotes{columns:1}
+    .hphone{display:none}
+    .row2{grid-template-columns:1fr}
+    .ctaband{padding:36px 24px}
+    .fgrid{grid-template-columns:1fr}
+    h1{font-size:clamp(1.9rem,9vw,2.5rem)}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehåll</a>
+<div class="demo">Redesign-förslag · jämför med karlstad-markarbeten.se</div>
+
+<header class="site">
+  <div class="wrap hrow">
+    <a class="brand" href="/">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#16150f"/><path d="M8 23 L16 9 L24 23" stroke="#e5a91f" stroke-width="3" fill="none" stroke-linejoin="round"/></svg>
+      Karlstad Markarbeten
+    </a>
+    <nav class="main" aria-label="Huvudmeny">
+      <a href="#tjanster">Tjänster</a>
+      <a href="#sa-funkar-det">Så fungerar det</a>
+      <a href="#omraden">Områden</a>
+      <a href="#fragor">Frågor</a>
+      <a href="#offert">Kontakt</a>
+    </nav>
+    <div class="hcta">
+      <a class="hphone" href="tel:+46702449969">070-244 99 69</a>
+      <a class="btn btn-dark" href="#offert">Få offert</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Karlstad · Hammarö · Kristinehamn · Kil · Forshaga · Grums</p>
+        <h1>Trygga markarbeten i Värmland, med rätt maskin och kompetens</h1>
+        <p class="lead">Behöver du dränera om källaren, schakta för en ny husgrund eller anlägga ett godkänt enskilt avlopp? Beskriv projektet och få en kostnadsfri, exakt offert från lokala entreprenörer.</p>
+        <div class="trust">
+          <span><span class="stars">★★★★★</span> <b>5,0</b> av 5</span>
+          <span><b>Svar inom 24 tim</b></span>
+          <span><b>Kostnadsfritt</b> och inte bindande</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://karlstad-markarbeten.se/assets/opt-markarbeten-gravmaskin-skopa-schakt-karlstad--Kq_MVpv.webp"
+             alt="Grävmaskinsskopa som schaktar en tomt i Karlstad" width="1200" height="750" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="tbar">
+      <div><span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><b>Lokalt i Värmland</b>Entreprenörer i din ort</span></div>
+      <div><span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span><b>Certifierade firmor</b>F-skatt och ansvarsförsäkring</span></div>
+      <div><span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></span><span><b>Svar inom 24 tim</b>Vardagar</span></div>
+      <div><span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></span><span><b>Ingen kostnad</b>Offerten är inte bindande</span></div>
+    </div>
+  </div>
+
+  <section class="blk" id="offert">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center" id="offertgrid">
+      <div>
+        <p class="eyebrow">Begär offert</p>
+        <h2>Två snabba steg – sedan tar en entreprenör över</h2>
+        <p class="lead">Du behöver inte kunna något om markarbeten. Välj tjänst och ort först, lämna kontaktuppgifterna sedan. Vi matchar dig mot en firma som gör just ditt jobb i ditt område.</p>
+        <div class="call">
+          <span class="muted">Vill du hellre ringa?</span>
+          <a href="tel:+46702449969">070-244 99 69</a>
+          <a href="mailto:offert@karlstad-markarbeten.se">offert@karlstad-markarbeten.se</a>
+        </div>
+      </div>
+
+      <div class="formcard">
+        <h2>Beskriv ditt markarbete</h2>
+        <p class="fsub">Tar under en minut. Svaren går till entreprenörer i ditt område.</p>
+
+        <div class="progress">
+          <span class="dot on" id="d1"><i>1</i> Jobbet</span>
+          <span class="bar"></span>
+          <span class="dot" id="d2"><i>2</i> Kontakt</span>
+        </div>
+
+        <form id="leadform" novalidate>
+          <div class="step on" id="s1">
+            <label class="f">Tjänst
+              <select name="service" required>
+                <option value="">Välj tjänst…</option>
+                <option>Dränering</option><option>Husgrund &amp; platta</option><option>Enskilt avlopp</option>
+                <option>Bergsprängning</option><option>Stenläggning</option><option>Anlägga avlopp</option>
+                <option>Schaktning</option><option>Annat markarbete</option>
+              </select>
+            </label>
+            <div class="row2">
+              <label class="f">Ort
+                <select name="city" required>
+                  <option value="">Välj ort…</option>
+                  <option>Karlstad</option><option>Hammarö</option><option>Kristinehamn</option>
+                  <option>Kil</option><option>Forshaga</option><option>Grums</option><option>Annan ort</option>
+                </select>
+              </label>
+              <label class="f">Önskad starttid
+                <select name="startTime">
+                  <option>Så snart som möjligt</option><option>Inom 1 månad</option>
+                  <option>Inom 3 månader</option><option>Senare i år</option><option>Vet inte än</option>
+                </select>
+              </label>
+            </div>
+            <button type="button" class="btn btn-primary" id="nextBtn">Nästa <span class="arrow">→</span></button>
+            <p class="microcopy">Steg 2 tar 20 sekunder. Inget betalkort, ingen bindning.</p>
+          </div>
+
+          <div class="step" id="s2">
+            <div class="row2">
+              <label class="f">Namn <input type="text" name="name" autocomplete="name" required></label>
+              <label class="f">Telefon <input type="tel" name="phone" inputmode="tel" autocomplete="tel" required></label>
+            </div>
+            <label class="f">E-post <span>(valfritt)</span> <input type="email" name="email" autocomplete="email"></label>
+            <label class="f">Beskriv jobbet
+              <textarea name="message" required placeholder="T.ex. dränera runt huset, ca 60 m², vill komma igång i vår."></textarea>
+            </label>
+            <div style="display:flex;gap:12px">
+              <button type="button" class="btn btn-ghost" id="backBtn" style="flex:0 0 auto">← Tillbaka</button>
+              <button type="submit" class="btn btn-primary" id="sendBtn" style="flex:1">Få min kostnadsfria offert</button>
+            </div>
+            <p class="microcopy"><b>Kostnadsfritt · inte bindande · svar inom 24 tim.</b><br>Vi säljer inte dina uppgifter vidare.</p>
+          </div>
+        </form>
+
+        <p class="orline">eller kontakta oss direkt</p>
+        <p style="text-align:center;margin:8px 0 0;font-weight:700">
+          <a href="tel:+46702449969" style="text-decoration:none">070-244 99 69</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="tjanster" style="background:var(--paper-2);border-radius:var(--r-xl)">
+    <div class="wrap">
+      <div class="blk-head">
+        <p class="eyebrow">Våra tjänster</p>
+        <h2>Sju vanliga markarbeten på villatomter</h2>
+        <p class="muted">Välj det som passar ditt projekt – eller beskriv bara läget i formuläret, så hjälper vi dig välja.</p>
+      </div>
+      <div class="svc">
+        <a class="card" href="#offert"><h3>Dränering</h3><p>Fukt i källaren eller vatten mot grunden? En omdränering tar normalt en till två veckor beroende på hus och mark.</p><span class="more">Läs mer <span class="arrow">→</span></span></a>
+        <a class="card" href="#offert"><h3>Husgrund &amp; platta</h3><p>Schakt, kapillärbrytande fyllning, isolering, armering och gjutning. Mått och markens bärighet styr pris och tid.</p><span class="more">Läs mer <span class="arrow">→</span></span></a>
+        <a class="card" href="#offert"><h3>Enskilt avlopp</h3><p>Godkända enskilda avlopp och minireningsverk i hela Värmland. Lösningen avgörs av mark, avstånd och kommunens krav.</p><span class="more">Läs mer <span class="arrow">→</span></span></a>
+        <a class="card" href="#offert"><h3>Bergsprängning</h3><p>Certifierade sprängare sköter tillstånd, vibrationsmätning och förbesiktning. Ansvarsförsäkringen ligger hos entreprenören.</p><span class="more">Läs mer <span class="arrow">→</span></span></a>
+        <a class="card" href="#offert"><h3>Stenläggning</h3><p>Det som avgör livslängden är underarbetet: urgrävning, bärlager, avvattning och kantstöd.</p><span class="more">Läs mer <span class="arrow">→</span></span></a>
+        <a class="card" href="#offert"><h3>Anlägga avlopp</h3><p>Anslutning till kommunalt VA eller byte av trasiga ledningar. Vi sköter schaktningen från tomtgräns till husgrund.</p><span class="more">Läs mer <span class="arrow">→</span></span></a>
+        <a class="card" href="#offert"><h3>Schaktning</h3><p>Tung schaktning, bortforsling och finplanering, så du får en yta som faktiskt går att använda.</p><span class="more">Läs mer <span class="arrow">→</span></span></a>
+        <a class="card" href="#offert" style="background:var(--accent-soft);border-color:transparent">
+          <h3>Osäker på vad du behöver?</h3><p style="color:var(--ink)">Beskriv läget i formuläret. Vi hjälper dig ringa in rätt åtgärd innan någon offert lämnas.</p>
+          <span class="more">Beskriv jobbet <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="sa-funkar-det">
+    <div class="wrap">
+      <div class="blk-head">
+        <p class="eyebrow">Så går det till</p>
+        <h2>Tre steg från förfrågan till offert</h2>
+      </div>
+      <div class="steps">
+        <div class="stepline"><div class="num">1</div><h3>Beskriv jobbet</h3><p>Fyll i vad som ska göras, var fastigheten ligger och när du vill komma igång.</p></div>
+        <div class="stepline"><div class="num">2</div><h3>Vi matchar mot entreprenör</h3><p>Din förfrågan går vidare till markentreprenörer i Värmland som utför den typen av arbete.</p></div>
+        <div class="stepline"><div class="num">3</div><h3>Du får offert</h3><p>Entreprenören kontaktar dig, gör platsbesök vid behov och lämnar pris. Du väljer fritt.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" style="background:var(--paper-2)">
+    <div class="wrap">
+      <div class="blk-head">
+        <p class="eyebrow">Vad kunder säger</p>
+        <h2>Villaägare i Värmland som fått hjälp</h2>
+      </div>
+      <div class="quotes">
+        <div class="quote"><p>Fuktskadad källare i två år. Fick offert dagen efter, entreprenören var noggrann och lämnade städat. Inga vattenproblem sedan dess.</p><div class="who"><i>M</i><span><b>Mats</b><small>Kil · Dränering</small></span></div></div>
+        <div class="quote"><p>Skulle spränga bort berg för ett garage. Grannarna var oroliga, men entreprenören hanterade tillstånd, mätning och informerade alla.</p><div class="who"><i>A</i><span><b>Anders</b><small>Hammarö · Bergsprängning</small></span></div></div>
+        <div class="quote"><p>Kommunen underkände vår brunn. De skötte ansökan och installerade minireningsverket smidigt. Slapp allt papperskrångel.</p><div class="who"><i>L</i><span><b>Lena</b><small>Kristinehamn · Enskilt avlopp</small></span></div></div>
+        <div class="quote"><p>Hade provat räkna själv men insåg att jag behövde hjälp. Fick snygg stenläggning med kantsten och dränering.</p><div class="who"><i>S</i><span><b>Sofia</b><small>Forshaga · Stenläggning</small></span></div></div>
+        <div class="quote"><p>Ojämn tomt med dålig avrinning. De planerade, schaktade och återanvände massorna på platsen som fyllnad.</p><div class="who"><i>P</i><span><b>Peter</b><small>Grums · Schaktning</small></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="omraden">
+    <div class="wrap">
+      <p class="eyebrow">Områden vi förmedlar jobb i</p>
+      <h2>Markarbeten i hela Värmland</h2>
+      <p class="muted" style="max-width:60ch">Vi arbetar med entreprenörer i Karlstad, Hammarö, Kristinehamn, Kil, Forshaga och Grums. Ligger fastigheten utanför orterna kan du ändå skicka in en förfrågan.</p>
+      <div class="areas">
+        <a href="#offert">Markarbeten i Kristinehamn</a>
+        <a href="#offert">Markarbeten i Grums</a>
+        <a href="#offert">Markarbeten i Kil</a>
+        <a href="#offert">Markarbeten på Hammarö</a>
+        <a href="#offert">Markarbeten i Forshaga</a>
+        <a href="#offert">Markarbeten i Arvika</a>
+        <a href="#offert">Markarbeten i Säffle</a>
+        <a href="#offert">Markarbeten i Munkfors</a>
+        <a href="#offert">Markarbeten i Sunne</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="fragor" style="background:var(--paper-2);border-radius:var(--r-xl)">
+    <div class="wrap">
+      <div class="blk-head">
+        <p class="eyebrow">Vanliga frågor</p>
+        <h2>Frågor om markarbeten i Karlstad</h2>
+      </div>
+      <div class="faq">
+        <div><h3>Vad gör Karlstad Markarbeten?</h3><p>Vi förmedlar kontakt mellan dig som behöver markarbete och markentreprenörer i Värmland. Du beskriver jobbet, vi matchar, du får offert.</p></div>
+        <div><h3>Vad kostar det att få en offert?</h3><p>Ingenting. Offerten är kostnadsfri och icke bindande – du bestämmer själv om du vill gå vidare.</p></div>
+        <div><h3>Vilka orter arbetar ni i?</h3><p>Karlstad, Hammarö, Kristinehamn, Kil, Forshaga, Grums och övriga Värmland. Utanför orterna kan du ändå skicka in en förfrågan.</p></div>
+        <div><h3>Vilka markarbeten kan ni hjälpa till med?</h3><p>Dränering, husgrund och gjuten platta, enskilt avlopp, bergsprängning och stenspräckning, stenläggning, anläggning av avlopp samt schaktning.</p></div>
+        <div><h3>Hur snabbt hör ni av er?</h3><p>Vi återkommer inom 24 timmar. Du kan också ringa 070-244 99 69 eller mejla offert@karlstad-markarbeten.se.</p></div>
+        <div><h3>Hjälper entreprenören till med tillstånd?</h3><p>Ja. Vid enskilt avlopp sköts ansökan till kommunen, och vid bergsprängning ansvarar certifierade sprängare för tillstånd och mätning.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-top:72px">
+    <div class="ctaband">
+      <div>
+        <h2>Redo att få en offert?</h2>
+        <p>Beskriv jobbet på en minut. Kostnadsfritt, inte bindande, svar inom 24 timmar – från en lokal entreprenör.</p>
+      </div>
+      <a class="btn btn-primary" href="#offert">Få kostnadsfri offert <span class="arrow">→</span></a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#e5a91f"/><path d="M8 23 L16 9 L24 23" stroke="#16150f" stroke-width="3" fill="none" stroke-linejoin="round"/></svg> Karlstad Markarbeten</div>
+        <p style="max-width:38ch;color:#9b9788">Vi förmedlar kontakt mellan dig som behöver markarbete och entreprenörer i Värmland. Offert är kostnadsfri och inte bindande.</p>
+      </div>
+      <div>
+        <h4>Tjänster</h4>
+        <ul>
+          <li><a href="#offert">Dränering</a></li><li><a href="#offert">Husgrund &amp; platta</a></li>
+          <li><a href="#offert">Enskilt avlopp</a></li><li><a href="#offert">Bergsprängning</a></li>
+          <li><a href="#offert">Stenläggning</a></li><li><a href="#offert">Anlägga avlopp</a></li>
+          <li><a href="#offert">Schaktning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+46702449969">070-244 99 69</a></li>
+          <li><a href="mailto:offert@karlstad-markarbeten.se">offert@karlstad-markarbeten.se</a></li>
+          <li><a href="#offert">Begär offert</a></li>
+          <li><a href="#">Integritetspolicy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© <span id="ar">2026</span> Karlstad Markarbeten · Värmland</span>
+      <button type="button" onclick="alert('Cookie-inställningar')">Cookieinställningar</button>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Karlstad Markarbeten",
+"url":"https://karlstad-markarbeten.se/","telephone":"+46702449969","email":"offert@karlstad-markarbeten.se",
+"areaServed":["Karlstad","Hammarö","Kristinehamn","Kil","Forshaga","Grums","Värmland"],
+"address":{"@type":"PostalAddress","addressLocality":"Karlstad","addressRegion":"Värmlands län","addressCountry":"SE"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Vad kostar det att få en offert?","acceptedAnswer":{"@type":"Answer","text":"Ingenting. Offerten är kostnadsfri och icke bindande."}},
+{"@type":"Question","name":"Hur snabbt hör ni av er?","acceptedAnswer":{"@type":"Answer","text":"Vi återkommer på förfrågningar inom 24 timmar."}},
+{"@type":"Question","name":"Vilka orter arbetar ni i?","acceptedAnswer":{"@type":"Answer","text":"Karlstad, Hammarö, Kristinehamn, Kil, Forshaga, Grums och övriga Värmland."}}]}
+</script>
+
+<script>
+document.getElementById('ar').textContent = new Date().getFullYear();
+(function(){
+  var f=document.getElementById('leadform'),s1=document.getElementById('s1'),s2=document.getElementById('s2'),
+      d1=document.getElementById('d1'),d2=document.getElementById('d2'),
+      next=document.getElementById('nextBtn'),back=document.getElementById('backBtn');
+  function valid(box){ var ok=true;
+    box.querySelectorAll('[required]').forEach(function(el){
+      if(!el.value.trim()){el.setAttribute('aria-invalid','true');ok=false;}else{el.removeAttribute('aria-invalid');}
+    }); return ok; }
+  next.addEventListener('click',function(){
+    if(!valid(s1))return; s1.classList.remove('on'); s2.classList.add('on');
+    d1.classList.remove('on'); d2.classList.add('on'); s2.querySelector('input,textarea').focus();
+  });
+  back.addEventListener('click',function(){ s2.classList.remove('on'); s1.classList.add('on'); d1.classList.add('on'); d2.classList.remove('on'); });
+  f.addEventListener('submit',function(e){ e.preventDefault(); if(!valid(s2))return;
+    var b=document.getElementById('sendBtn'); b.disabled=true; b.textContent='Skickar…';
+    setTimeout(function(){ f.innerHTML='<div style="text-align:center;padding:20px 0"><h3>Tack – vi har tagit emot din förfrågan</h3><p class="muted">En entreprenör i ditt område kontaktar dig inom 24 timmar. Brådskande? Ring 070-244 99 69.</p></div>'; },600);
+  });
+})();
+(function(){
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.12});
+  document.querySelectorAll('.card,.stepline,.quote,.faq > div,.blk-head').forEach(function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight-60){el.classList.add('reveal');io.observe(el);} });
+})();
+</script>
+</body>
+</html>
